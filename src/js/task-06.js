@@ -4,8 +4,8 @@ inputRef.addEventListener('blur', onInputBlur);
 
 
 function onInputBlur(event) {
-    const numberSimbol = Number(inputRef.dataset.length);
-    if (event.currentTarget.value.length === numberSimbol) {
+    const numberSymbol = Number(inputRef.dataset.length);
+    if (event.currentTarget.value.length === numberSymbol) {
         inputRef.classList.add('valid')
     } else { inputRef.classList.add('invalid') };
   }  
