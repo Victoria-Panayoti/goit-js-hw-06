@@ -6,5 +6,5 @@ refs.input.addEventListener('input', onInputEnter);
 
 function onInputEnter(enter) {
     enter.preventDefault();
-    refs.span.textContent = enter.currentTarget.value;
+    refs.span.textContent = enter.currentTarget.value.trim();
 }
