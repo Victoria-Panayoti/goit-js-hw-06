@@ -5,6 +5,6 @@ const refs = {
 refs.input.addEventListener('input', onInputEnter);
 
 function onInputEnter(enter) {
-    enter.preventDefault();
-    refs.span.textContent = enter.currentTarget.value.trim();
+    
+    refs.span.textContent = enter.target.value.trim().length === 0? 'Anonymous': enter.target.value.trim();
 }
